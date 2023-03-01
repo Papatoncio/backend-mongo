@@ -1,0 +1,31 @@
+###
+GET http://localhost:3000/products
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"Crema Facial",
+    "description":"Crema para la cara",
+    "price":34.5,
+    "images":"cream.png"
+}
+
+###
+PUT http://localhost:3000/products/63ff9b5bde667f0855bfd35a
+Content-Type: application/json
+
+{
+    "name":"Crema Para la Piel",
+    "description":"Crema para la piel",
+    "price":45.5,
+    "images":"skinCare.png"
+}
+
+###
+DELETE http://localhost:3000/products/63ff9b5bde667f0855bfd35a
+
+###
+GET http://localhost:3000/products/63ff9b5bde667f0855bfd35a
