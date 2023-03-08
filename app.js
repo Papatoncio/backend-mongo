@@ -15,6 +15,7 @@ const morgan = require('morgan'); //Add
 const helmet = require('helmet'); //add
 const bodyParser = require('body-parser'); //add
 const monk = require('monk'); //add
+const cors = require('cors');
 
 var app = express();
 
@@ -29,6 +30,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 require('dotenv').config(); //add
+app.use(cors());
 
 app.use(helmet()); //add
 app.use(morgan('dev')); //add
