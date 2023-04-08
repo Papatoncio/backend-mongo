@@ -14,14 +14,62 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:3000/products/63ff9b5bde667f0855bfd35a
+POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-    "name":"Crema Para la Piel",
-    "description":"Crema para la piel",
-    "price":45.5,
-    "images":"skinCare.png"
+    "id":2,
+    "name":"Google Pixel 6 - 5G Teléfono Android",
+    "description":"Google Pixel 6 - 5G Teléfono Android - Smartphone desbloqueado con lente ancha y ultraancha - 128 GB - color espuma de mar (Sorta Seafoam) (reacondicionado) ",
+    "price":5371.11,
+    "images":"https://m.media-amazon.com/images/I/81eLhDX1TRL._AC_SL1500_.jpg"
+}
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "id":3,
+    "name":"Samsung Galaxy S10+ Plus",
+    "description":"Samsung Galaxy S10+ Plus 128GB+8GB RAM SM-G975 6.4 Dual Sim LTE Libre de Fabrica (Version Internacional) Blanco",
+    "price":11195.24,
+    "images":"https://m.media-amazon.com/images/I/61H+3lkj88L._AC_SL1322_.jpg"
+}
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "id":4,
+    "name":"Samsung Galaxy S23 Ultra",
+    "description":"Samsung Galaxy S23 Ultra 12GB_512GB Negro Desbloqueado ",
+    "price":27697.00,
+    "images":"https://m.media-amazon.com/images/I/61-Trif8A+L._AC_SL1500_.jpg"
+}
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "id":5,
+    "name":"Apple iPhone 12",
+    "description":"Apple iPhone 12, 64GB, Verde (Reacondicionado)",
+    "price":9561.18,
+    "images":"https://m.media-amazon.com/images/I/51ugi3mMBgL._AC_SL1000_.jpg"
+}
+
+###
+PUT http://localhost:3000/products/641b54ff25f7dc0c8c5cb4e6
+Content-Type: application/json
+
+{
+    "name":"CeraVe Gel Limpiador Espumoso Diario para Piel Mixta, Grasa o con Acné 236ml ",
+    "description":"CeraVe Gel Limpiador Espumoso Diario para Piel Mixta, Grasa o con Acné 236ml ",
+    "price":301.00,
+    "images":"https://m.media-amazon.com/images/I/512Hs7Lxk5L._AC_SL1200_.jpg"
 }
 
 ###
